@@ -1,3 +1,4 @@
+//tower of hanoi
 export const towerOfHanoi = (n: number, source: string, helper: string, destination: string): void => {
     if (n == 1) {
         console.log(`Move disk 1 from ${source} to ${destination}`)

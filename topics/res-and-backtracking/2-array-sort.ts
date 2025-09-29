@@ -1,3 +1,4 @@
+// is it a sorted array
 export const isSortedArray = (arr: number[], index = arr.length): boolean => {
     if (arr.length === 1 || index === 1) {
         return true
