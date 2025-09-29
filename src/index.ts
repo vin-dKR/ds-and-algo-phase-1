@@ -1,12 +1,14 @@
+import { startBitString } from "../topics/res-and-backtracking/3-gen-str-of-nbits";
+
 {/*
     import { towerOfHanoi } from "../topics/res-and-backtracking/1-tower-of-hanoi";
+    import { isSortedArray } from "../topics/res-and-backtracking/2-array-sort";
 */}
-import { sortArrayRec } from "../topics/res-and-backtracking/2-array-sort";
 
 {/*
     const xxx = towerOfHanoi(3, "A", "B", "C")
-    console.log(xxx)
+    const isSorted = isSortedArray([0, 1, 4, 8, 9])
 */}
 
-const isSorted = sortArrayRec([9, 4, 5, 6], 2)
-console.log(isSorted)
+const arr = startBitString(3)
+console.log(arr)
