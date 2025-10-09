@@ -1,3 +1,4 @@
+import { towerOfHanoi } from "../topics/res-and-backtracking/1-tower-of-hanoi";
 import { kAryStringGen } from "../topics/res-and-backtracking/4-k-ary-string-gen";
 
 {/*
@@ -11,5 +12,5 @@ import { kAryStringGen } from "../topics/res-and-backtracking/4-k-ary-string-gen
     const isSorted = isSortedArray([0, 1, 4, 8, 9])
 */}
 
-const arr = kAryStringGen(3, 2)
+const arr = towerOfHanoi(2, 'A', 'B', 'C')
 console.log(arr)
