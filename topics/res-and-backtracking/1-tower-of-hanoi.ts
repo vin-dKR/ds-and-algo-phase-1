@@ -1,16 +1,16 @@
 //tower of hanoi
 export const towerOfHanoi = (n: number, source: string, helper: string, destination: string): void => {
-    console.log("----------")
+    console.log("new fn ----------", n)
     if (n == 1) {
-        console.log(`Move disk 1 from ${source} to ${destination}`)
+        console.log(`Move disk ${n} from ${source} to ${destination}`)
         return
     }
 
     towerOfHanoi(n - 1, source, destination, helper)
-    console.log(`------rec1 Move disk ${n} from ${source} to ${helper}`);
+    console.log(`------1rec${n-1} Move disk ${n} from ${source} to ${helper}`);
 
-    towerOfHanoi(n - 1, destination, helper, source)
-    console.log(`------rec2 Move disk ${n} from ${destination} to ${source}`);
+    towerOfHanoi(n - 1, helper, source, destination)
+    console.log(`------2rec${n-1} Move disk ${n} from ${helper} to ${destination}`);
 }
 
 {/*
@@ -23,5 +23,6 @@ export const towerOfHanoi = (n: number, source: string, helper: string, destinat
   * helper, so that the last remain block goes to the destination, and 
   * we can put all the helper's block to destination(not at a time) instead 
   * by process.
+  *
   *
 */}
