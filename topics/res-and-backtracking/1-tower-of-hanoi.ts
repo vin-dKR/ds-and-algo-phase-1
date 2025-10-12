@@ -1,17 +1,20 @@
 //tower of hanoi
 export const towerOfHanoi = (n: number, source: string, helper: string, destination: string): void => {
-    console.log("new fn ----------", n)
-    if (n == 1) {
-        console.log(`Move disk ${n} from ${source} to ${destination}`)
-        return
+    if (n === 1) {
+        console.log(`Move disk ${n} from ${source} to ${destination}`);
+        return;
     }
 
-    towerOfHanoi(n - 1, source, destination, helper)
-    console.log(`------1rec${n-1} Move disk ${n} from ${source} to ${helper}`);
+    // Move n-1 disks from source → helper
+    towerOfHanoi(n - 1, source, destination, helper);
 
-    towerOfHanoi(n - 1, helper, source, destination)
-    console.log(`------2rec${n-1} Move disk ${n} from ${helper} to ${destination}`);
-}
+    // Move the nth disk from source → destination
+    console.log(`Move disk ${n} from ${source} to ${destination}`);
+
+    // Move n-1 disks from helper → destination
+    towerOfHanoi(n - 1, helper, source, destination);
+};
+
 
 {/*
   * takes 4 argurments 2nd is source and the 4th is destination. do not
