@@ -22,6 +22,7 @@ list.insertAtBeg(3)
 list.insertAtBeg(4)
 
 list.insertAtPosition(10, 2)
+list.deleteHead()
 
 console.log(list.length)
 

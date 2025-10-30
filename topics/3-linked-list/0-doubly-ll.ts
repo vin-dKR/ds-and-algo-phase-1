@@ -114,4 +114,13 @@ export class DoublyLinkedList {
 
         this.length++
     }
+
+    deleteHead() {
+        if (!this.head) {
+            throw new Error("No head is there in the list")
+        }
+
+        this.head = this.head.next
+        this.head!.prev = null
+    }
 }
