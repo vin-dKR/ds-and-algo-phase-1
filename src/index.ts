@@ -1,6 +1,7 @@
-import { DoublyLinkedList } from "../topics/3-linked-list/0-doubly-ll"
+import { CircularLL } from "../topics/3-linked-list/0-circular-ll"
 
 {/*
+    import { DoublyLinkedList } from "../topics/3-linked-list/0-doubly-ll"
     import { LinkedList } from "../topics/3-linked-list/0-ll";
     import { towerOfHanoi } from "../topics/res-and-backtracking/1-tower-of-hanoi";
     import { kAryStringGen } from "../topics/res-and-backtracking/4-k-ary-string-gen";
@@ -15,15 +16,12 @@ import { DoublyLinkedList } from "../topics/3-linked-list/0-doubly-ll"
     const arr = startBitString(4)
 */}
 
-const list = new DoublyLinkedList()
+const list = new CircularLL()
 
 list.append(2)
-list.insertAtBeg(3)
-list.insertAtBeg(4)
+list.append(4)
+list.append(1)
+list.append(0)
+const pos = list.getValAtPosition(0)
 
-list.insertAtPosition(10, 2)
-list.deleteHead()
-
-console.log(list.length)
-
-console.log(list.display())
+console.log(pos)
