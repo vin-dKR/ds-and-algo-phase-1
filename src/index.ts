@@ -1,6 +1,7 @@
-import { CircularLL } from "../topics/3-linked-list/0-circular-ll"
+import { Stack } from "../topics/3-linked-list/1-stack"
 
 {/*
+    import { CircularLL } from "../topics/3-linked-list/0-circular-ll"
     import { DoublyLinkedList } from "../topics/3-linked-list/0-doubly-ll"
     import { LinkedList } from "../topics/3-linked-list/0-ll";
     import { towerOfHanoi } from "../topics/res-and-backtracking/1-tower-of-hanoi";
@@ -14,14 +15,13 @@ import { CircularLL } from "../topics/3-linked-list/0-circular-ll"
     const xxx = towerOfHanoi(3, "A", "B", "C")
     const isSorted = isSortedArray([0, 1, 4, 8, 9])
     const arr = startBitString(4)
+    const list = new CircularLL()
 */}
 
-const list = new CircularLL()
+const list = new Stack()
 
-list.append(2)
-list.append(4)
-list.append(1)
-list.append(0)
-const pos = list.getValAtPosition(0)
+const size = list.size()
+const arr = list.toArray()
+const isEmpty = list.isEmpty()
 
-console.log(pos)
+console.log("this is the list ", isEmpty)
