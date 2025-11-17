@@ -20,6 +20,6 @@ import { RecNthNode } from "../topics/3-linked-list/2-nth-node-from-end"
 */}
 
 const list = new RecNthNode()
-const isEmpty = list.reverseNthNode([1, 2, 3, 4], 2)
+const isEmpty = list.reverseNthNode([1, 2, 3, 5], 5)
 
 console.log("this is the list ", isEmpty)

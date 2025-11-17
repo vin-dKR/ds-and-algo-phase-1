@@ -18,16 +18,43 @@ export class RecNthNode {
     }
 
     reverseNthNode(arr: number[], position: number) {
-        let ll = new Node(arr[0])
+        if (arr.length === 0) return null;
+
+        let head = new Node(arr[0]);
+        let current = head;
 
         for (let i = 1; i < arr.length; i++) {
-            ll.next = new Node(arr[i])
+            current.next = new Node(arr[i]);
+            current = current.next;
         }
 
+        let fast: Node | null = head
+        let slow: Node | null = head
+
+        for (let i = 0; i < position; i++) {
+            if (fast === null) {
+                return null
+            }
+
+            fast = fast.next
+        }
+
+        while (fast !== null) {
+            // console.log("--=----=-", fast)
+            // console.log("-------------------------------------")
+            slow = slow!.next
+            fast = fast.next
+        }
+
+        return slow
+    }
+
+    display() {
         const retArr: number[] = []
-        let retCurr: Node | null = ll
+        let retCurr: Node | null = this.head
 
         while (retCurr !== null) {
+            // console.log("----", retCurr.data)
             retArr.push(retCurr.data)
             retCurr = retCurr.next
         }
