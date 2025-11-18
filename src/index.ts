@@ -1,6 +1,6 @@
-import { RecNthNode } from "../topics/3-linked-list/2-nth-node-from-end"
-
+import { LinkedList } from "../topics/3-linked-list/5-nth-node-from-end"
 {/*
+    import { RecNthNode } from "../topics/3-linked-list/2-nth-node-from-end"
     import { Stack } from "../topics/3-linked-list/1-stack"
     import { CircularLL } from "../topics/3-linked-list/0-circular-ll"
     import { DoublyLinkedList } from "../topics/3-linked-list/0-doubly-ll"
@@ -19,7 +19,7 @@ import { RecNthNode } from "../topics/3-linked-list/2-nth-node-from-end"
     const list = new CircularLL()
 */}
 
-const list = new RecNthNode()
-const isEmpty = list.reverseNthNode([1, 2, 3, 5], 5)
+const list = new LinkedList()
+const isEmpty = list.arrToLL([1, 2, 3, 5])
 
 console.log("this is the list ", isEmpty)
