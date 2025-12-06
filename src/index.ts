@@ -1,3 +1,4 @@
+import { testIt } from "../topics/3-linked-list/10-floyd-cycle"
 import { LinkedList } from "../topics/3-linked-list/5-nth-node-from-end"
 {/*
     import { RecNthNode } from "../topics/3-linked-list/2-nth-node-from-end"
@@ -19,7 +20,6 @@ import { LinkedList } from "../topics/3-linked-list/5-nth-node-from-end"
     const list = new CircularLL()
 */}
 
-const list = new LinkedList()
-const isEmpty = list.arrToLL([1, 2, 3, 5])
+const res = testIt()
 
-console.log("this is the list ", isEmpty)
+console.log("this is the list ", res)

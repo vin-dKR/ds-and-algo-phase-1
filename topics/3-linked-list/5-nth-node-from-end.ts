@@ -28,7 +28,5 @@ export class LinkedList {
         // Array to LinkedList
         const linkedList = this.arrToLL(arr)
 
-        for (let i = 0; i < position; i++) {
-        }
     }
 }
