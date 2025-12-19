@@ -1,5 +1,6 @@
 import { testIt } from "../topics/3-linked-list/10-floyd-cycle"
 import { LinkedList } from "../topics/3-linked-list/5-nth-node-from-end"
+import { LinkedListQ6 } from "../topics/3-linked-list/6-insert-in-sorted-ll"
 {/*
     import { RecNthNode } from "../topics/3-linked-list/2-nth-node-from-end"
     import { Stack } from "../topics/3-linked-list/1-stack"
@@ -20,6 +21,16 @@ import { LinkedList } from "../topics/3-linked-list/5-nth-node-from-end"
     const list = new CircularLL()
 */}
 
-const res = testIt()
+const ll = new LinkedListQ6()
 
-console.log("this is the list ", res)
+ll.insertAtEnd(40);
+ll.insertAtEnd(20);
+ll.insertAtEnd(30);
+ll.insertAtEnd(5);
+
+ll.display();
+
+ll.insertAtPosition(15, 2);
+ll.display();
+
+console.log("this is the list ",)
