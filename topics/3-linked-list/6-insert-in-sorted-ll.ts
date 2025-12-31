@@ -65,6 +65,19 @@ export class LinkedListQ6 {
         return true
     }
 
+    insertInSortedLL(data: number) {
+        const newNode = new Node(data)
+        let curr = 0
+        const sortedLL = this.head
+
+        if (!this.head) {
+            this.insertAtBeg(data)
+        } else {
+            while (this.head.next !== null) {
+            }
+        }
+
+    }
     display() {
         if (this.head === null) {
             console.log("the list is empty")
