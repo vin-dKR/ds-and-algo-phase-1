@@ -1,6 +1,7 @@
-import { addBinary, addBinaryInBigInt, addBinaryInBitWise, addBinaryInLoop, addBinaryInRecursion } from "../topics/binary-addition/binary-add";
+import { LinkedListQ6 } from "../topics/3-linked-list/6-insert-in-sorted-ll";
 
 {/*
+    import { addBinary, addBinaryInBigInt, addBinaryInBitWise, addBinaryInLoop, addBinaryInRecursion } from "../topics/binary-addition/binary-add";
     import { testIt } from "../topics/3-linked-list/10-floyd-cycle"
     import { LinkedList } from "../topics/3-linked-list/5-nth-node-from-end"
     import { LinkedListQ6 } from "../topics/3-linked-list/6-insert-in-sorted-ll"
@@ -16,5 +17,13 @@ import { addBinary, addBinaryInBigInt, addBinaryInBitWise, addBinaryInLoop, addB
     import { isSortedArray } from "../topics/res-and-backtracking/2-array-sort";
 */}
 
-const a = addBinaryInRecursion("11", "1")
-console.log(a)
+const ll = new LinkedListQ6()
+ll.insertAtEnd(1)
+ll.insertAtEnd(2)
+ll.insertAtEnd(3)
+ll.insertAtEnd(4)
+ll.insertAtEnd(16)
+ll.insertAtEnd(27)
+ll.insertInSortedLL(20)
+
+ll.display()
