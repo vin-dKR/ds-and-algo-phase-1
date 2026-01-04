@@ -1,6 +1,6 @@
 import { myAtoi } from "../topics/leetcode/8-string-to-integer-atoi";
 
-console.log(myAtoi("0-1"));
+console.log(myAtoi("1-1"));
 // → 0  (Correct! Only reads '0', stops at '-')
 
 console.log(myAtoi("00123"));
