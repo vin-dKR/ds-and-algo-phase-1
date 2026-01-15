@@ -1,4 +1,4 @@
-export  function letterCombinations(digits: string): string[] {
+export function letterCombinations(digits: string): string[] {
     if (digits.length === 0) return [];
 
     const map: Record<string, string> = {
